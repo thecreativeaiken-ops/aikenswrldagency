@@ -1,0 +1,2789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Aikenswrld is a digital marketing and creative agency helping ambitious brands move through strategy, creative, content and digital experiences."
+    >
+
+    <meta
+        name="author"
+        content="Adrian Ndola — Aikenswrld"
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <meta
+        name="keywords"
+        content="Aikenswrld, digital marketing, graphic design, branding, web design, creative agency, Nairobi, Kenya"
+    >
+
+    <meta
+        name="theme-color"
+        content="#0a0a0a"
+    >
+
+
+    <!-- =====================================================
+         SOCIAL / SEO
+    ====================================================== -->
+
+    <meta
+        property="og:title"
+        content="Aikenswrld — Digital Marketing Agency"
+    >
+
+    <meta
+        property="og:description"
+        content="Digital marketing, creative strategy, branding and digital experiences by Aikenswrld."
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+
+    <!-- =====================================================
+         TITLE
+    ====================================================== -->
+
+    <title>
+        Aikenswrld — Digital Marketing Agency
+    </title>
+
+
+    <!-- =====================================================
+         FAVICON
+    ====================================================== -->
+
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='12' fill='%230a0a0a'/%3E%3Ctext x='50' y='70' text-anchor='middle' font-family='Arial,sans-serif' font-size='62' font-weight='900' fill='%230396FF'%3EA%3C/text%3E%3C/svg%3E"
+    >
+
+
+    <!-- =====================================================
+         MAIN CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+
+    <!-- =====================================================
+         PEOPLE PHOTO POLISH
+    ====================================================== -->
+
+    <style>
+
+        .people-photo {
+            position: relative;
+            width: 100%;
+            height: auto;
+            min-height: 0;
+            aspect-ratio: auto;
+            overflow: hidden;
+            background: #111111;
+        }
+
+        .people-photo img {
+            position: relative;
+            inset: auto;
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            display: block;
+            object-fit: initial;
+            object-position: center;
+            transition:
+                transform 0.6s cubic-bezier(.2,.65,.3,1);
+        }
+
+        .people-card:hover .people-photo img {
+            transform: scale(1.025);
+        }
+
+        .people-photo-overlay {
+            position: absolute;
+            inset: 0;
+            z-index: 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 28px;
+
+            background:
+                linear-gradient(
+                    to top,
+                    rgba(0,0,0,.78) 0%,
+                    rgba(0,0,0,.28) 45%,
+                    rgba(0,0,0,0) 72%
+                );
+        }
+
+        .people-photo-overlay span {
+            display: block;
+            margin-bottom: 10px;
+            color: #0396FF;
+            font-size: 9px;
+            font-weight: 800;
+            letter-spacing: .15em;
+        }
+
+        .people-photo-overlay strong {
+            display: block;
+            color: #ffffff;
+            font-size: clamp(34px, 4vw, 62px);
+            line-height: .9;
+            letter-spacing: -.05em;
+            font-weight: 800;
+        }
+
+        @media (max-width: 600px) {
+
+            .people-photo {
+                height: auto;
+                min-height: 0;
+                aspect-ratio: auto;
+            }
+
+            .people-photo img {
+                width: 100%;
+                height: auto;
+            }
+
+            .people-photo-overlay {
+                padding: 20px;
+            }
+
+            .people-photo-overlay strong {
+                font-size: 38px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         PAGE LOADER / PROGRESS
+    ====================================================== -->
+
+    <div
+        class="page-progress"
+        id="pageProgress"
+    ></div>
+
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header
+        class="site-header"
+        id="siteHeader"
+    >
+
+        <a
+            class="brand"
+            href="#home"
+            aria-label="Aikenswrld home"
+        >
+
+            <span class="brand-symbol">
+                A
+            </span>
+
+            <span class="brand-text">
+                AIKEN'S WRLD
+            </span>
+
+        </a>
+
+
+        <nav
+            class="desktop-nav"
+            id="desktopNav"
+        >
+
+            <a href="#services">
+                Services
+            </a>
+
+            <a href="#work">
+                Work
+            </a>
+
+            <a href="#system">
+                Approach
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#insights">
+                Insights
+            </a>
+
+            <a
+                href="#contact"
+                class="nav-button"
+            >
+                Start a project
+                <span>↗</span>
+            </a>
+
+        </nav>
+
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation"
+            aria-expanded="false"
+        >
+
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MOBILE NAV
+    ====================================================== -->
+
+    <div
+        class="mobile-menu"
+        id="mobileMenu"
+    >
+
+        <div class="mobile-menu-inner">
+
+            <span class="mobile-menu-label">
+                NAVIGATION
+            </span>
+
+            <a href="#services">
+                Services
+            </a>
+
+            <a href="#work">
+                Work
+            </a>
+
+            <a href="#system">
+                Approach
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#insights">
+                Insights
+            </a>
+
+            <a
+                href="#contact"
+                class="mobile-menu-cta"
+            >
+                Start a project
+                <span>↗</span>
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section
+            class="hero-section"
+            id="home"
+        >
+
+            <div class="hero-grid">
+
+
+                <div class="hero-left reveal">
+
+
+                    <div class="eyebrow-row">
+
+                        <span class="eyebrow-dot"></span>
+
+                        <span>
+                            DIGITAL MARKETING / CREATIVE / GROWTH
+                        </span>
+
+                    </div>
+
+
+                    <h1 class="hero-title">
+
+                        <span>
+                            MAKE YOUR
+                        </span>
+
+                        <span class="hero-title-accent">
+                            BRAND MOVE.
+                        </span>
+
+                    </h1>
+
+
+                    <p class="hero-description">
+
+                        Aikenswrld is a digital marketing and creative
+                        agency built for brands that want more than
+                        visibility.
+
+                    </p>
+
+
+                    <div class="hero-actions">
+
+                        <a
+                            href="#contact"
+                            class="button-primary"
+                        >
+                            Start a project
+                            <span>↗</span>
+                        </a>
+
+
+                        <a
+                            href="#work"
+                            class="button-secondary"
+                        >
+                            Explore our work
+                            <span>↓</span>
+                        </a>
+
+                    </div>
+
+
+                    <div class="hero-footnote">
+
+                        <span>
+                            Nairobi / Kenya
+                        </span>
+
+                        <span>
+                            Strategy → Creative → Digital
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     HERO DIGITAL VISUAL
+                ================================================== -->
+
+                <div class="hero-visual reveal">
+
+
+                    <div class="visual-topbar">
+
+                        <span>
+                            AIKENSWRLD / GROWTH SYSTEM
+                        </span>
+
+                        <span>
+                            01
+                        </span>
+
+                    </div>
+
+
+                    <div class="visual-stage">
+
+                        <div class="visual-grid"></div>
+
+                        <div class="visual-orbit orbit-a"></div>
+
+                        <div class="visual-orbit orbit-b"></div>
+
+                        <div class="visual-orbit orbit-c"></div>
+
+
+                        <div class="visual-core">
+
+                            <span>
+                                AIKEN'S
+                            </span>
+
+                            <strong>
+                                WRLD
+                            </strong>
+
+                            <small>
+                                DIGITAL ENGINE
+                            </small>
+
+                        </div>
+
+
+                        <div class="visual-node node-a">
+                            STRATEGY
+                        </div>
+
+                        <div class="visual-node node-b">
+                            CREATIVE
+                        </div>
+
+                        <div class="visual-node node-c">
+                            MEDIA
+                        </div>
+
+                        <div class="visual-node node-d">
+                            DATA
+                        </div>
+
+                    </div>
+
+
+                    <div class="visual-bottom">
+
+                        <span>
+                            CONNECTED THINKING
+                        </span>
+
+                        <span>
+                            CREATIVITY WITHOUT LIMITS.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-scroll">
+
+                <span>
+                    SCROLL TO EXPLORE
+                </span>
+
+                <div class="scroll-line"></div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             MARQUEE
+        ================================================== -->
+
+        <section class="ticker-section">
+
+            <div class="ticker-track">
+
+                <span>STRATEGY</span>
+
+                <i>✦</i>
+
+                <span>DIGITAL MARKETING</span>
+
+                <i>✦</i>
+
+                <span>CREATIVE</span>
+
+                <i>✦</i>
+
+                <span>BRANDING</span>
+
+                <i>✦</i>
+
+                <span>CONTENT</span>
+
+                <i>✦</i>
+
+                <span>GROWTH</span>
+
+                <i>✦</i>
+
+                <span>STRATEGY</span>
+
+                <i>✦</i>
+
+                <span>DIGITAL MARKETING</span>
+
+                <i>✦</i>
+
+                <span>CREATIVE</span>
+
+                <i>✦</i>
+
+                <span>BRANDING</span>
+
+                <i>✦</i>
+
+                <span>CONTENT</span>
+
+                <i>✦</i>
+
+                <span>GROWTH</span>
+
+                <i>✦</i>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             MANIFESTO
+        ================================================== -->
+
+        <section class="manifesto-section light-section">
+
+
+            <div class="section-index reveal">
+                01 — WHY US
+            </div>
+
+
+            <div class="manifesto-grid">
+
+
+                <div class="manifesto-title reveal">
+
+                    <h2>
+
+                        GOOD MARKETING
+                        <br>
+
+                        <span>
+                            SHOULD MOVE
+                        </span>
+
+                        <br>
+
+                        PEOPLE.
+
+                    </h2>
+
+                </div>
+
+
+                <div class="manifesto-copy reveal">
+
+                    <p class="large-copy">
+
+                        Not just impressions.
+                        Not just posts.
+                        Not just pretty graphics.
+
+                    </p>
+
+
+                    <p>
+
+                        We build connected marketing systems that give
+                        brands a clearer voice, stronger creative and a
+                        better path from attention to action.
+
+                    </p>
+
+
+                    <a
+                        href="#services"
+                        class="underlined-link"
+                    >
+                        See our capabilities
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SERVICES
+        ================================================== -->
+
+        <section
+            class="services-section dark-section"
+            id="services"
+        >
+
+
+            <div class="section-intro reveal">
+
+                <div class="section-index">
+                    02 — WHAT WE DO
+                </div>
+
+
+                <div>
+
+                    <p class="section-kicker">
+                        FULL-SERVICE THINKING.
+                    </p>
+
+                    <h2>
+
+                        FROM IDEA
+                        <br>
+
+                        <span>
+                            TO IMPACT.
+                        </span>
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="service-list">
+
+
+                <article class="service-row reveal">
+
+                    <div class="service-number">
+                        01
+                    </div>
+
+                    <div class="service-main">
+
+                        <div class="service-heading">
+
+                            <h3>
+                                Digital Strategy
+                            </h3>
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </div>
+
+                        <p>
+
+                            Brand positioning, campaign strategy,
+                            audience thinking, content architecture
+                            and digital roadmaps built around the
+                            real problem.
+
+                        </p>
+
+                    </div>
+
+                    <div class="service-tags">
+
+                        <span>POSITIONING</span>
+                        <span>RESEARCH</span>
+                        <span>CAMPAIGNS</span>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="service-row reveal">
+
+                    <div class="service-number">
+                        02
+                    </div>
+
+                    <div class="service-main">
+
+                        <div class="service-heading">
+
+                            <h3>
+                                Creative & Brand
+                            </h3>
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </div>
+
+                        <p>
+
+                            Visual identities, campaign concepts,
+                            graphic systems, social creative and
+                            brand experiences that people remember.
+
+                        </p>
+
+                    </div>
+
+                    <div class="service-tags">
+
+                        <span>IDENTITY</span>
+                        <span>CAMPAIGNS</span>
+                        <span>DESIGN</span>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="service-row reveal">
+
+                    <div class="service-number">
+                        03
+                    </div>
+
+                    <div class="service-main">
+
+                        <div class="service-heading">
+
+                            <h3>
+                                Social & Content
+                            </h3>
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </div>
+
+                        <p>
+
+                            Content systems designed for attention,
+                            consistency and audience connection across
+                            the channels where your people actually are.
+
+                        </p>
+
+                    </div>
+
+                    <div class="service-tags">
+
+                        <span>SOCIAL</span>
+                        <span>CONTENT</span>
+                        <span>COMMUNITY</span>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="service-row reveal">
+
+                    <div class="service-number">
+                        04
+                    </div>
+
+                    <div class="service-main">
+
+                        <div class="service-heading">
+
+                            <h3>
+                                Performance Marketing
+                            </h3>
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </div>
+
+                        <p>
+
+                            Paid media, campaign activation,
+                            testing and optimisation designed to
+                            connect marketing activity with business goals.
+
+                        </p>
+
+                    </div>
+
+                    <div class="service-tags">
+
+                        <span>MEDIA</span>
+                        <span>ACQUISITION</span>
+                        <span>OPTIMISATION</span>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="service-row reveal">
+
+                    <div class="service-number">
+                        05
+                    </div>
+
+                    <div class="service-main">
+
+                        <div class="service-heading">
+
+                            <h3>
+                                Web & Digital Experiences
+                            </h3>
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </div>
+
+                        <p>
+
+                            Websites and digital touchpoints that
+                            turn brand thinking into experiences
+                            designed to inform, engage and convert.
+
+                        </p>
+
+                    </div>
+
+                    <div class="service-tags">
+
+                        <span>WEB</span>
+                        <span>UX</span>
+                        <span>DIGITAL</span>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="service-row reveal">
+
+                    <div class="service-number">
+                        06
+                    </div>
+
+                    <div class="service-main">
+
+                        <div class="service-heading">
+
+                            <h3>
+                                Measurement & Insight
+                            </h3>
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </div>
+
+                        <p>
+
+                            Reporting, learning loops and performance
+                            thinking that help your marketing become
+                            smarter over time.
+
+                        </p>
+
+                    </div>
+
+                    <div class="service-tags">
+
+                        <span>INSIGHT</span>
+                        <span>REPORTING</span>
+                        <span>LEARNING</span>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SYSTEM / APPROACH
+        ================================================== -->
+
+        <section
+            class="system-section"
+            id="system"
+        >
+
+
+            <div class="section-intro reveal">
+
+                <div class="section-index">
+                    03 — OUR APPROACH
+                </div>
+
+
+                <div>
+
+                    <p class="section-kicker">
+                        THE AIKENSWRLD SYSTEM
+                    </p>
+
+                    <h2>
+
+                        THINK.
+                        <br>
+
+                        <span>
+                            MAKE. MOVE.
+                        </span>
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="system-steps">
+
+
+                <article class="system-card reveal">
+
+                    <div class="system-card-top">
+
+                        <span>
+                            01
+                        </span>
+
+                        <span>
+                            DISCOVER
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Understand
+                    </h3>
+
+                    <p>
+
+                        We learn the business, the audience,
+                        the category and the opportunity before
+                        jumping into execution.
+
+                    </p>
+
+                </article>
+
+
+
+                <article class="system-card reveal">
+
+                    <div class="system-card-top">
+
+                        <span>
+                            02
+                        </span>
+
+                        <span>
+                            CREATE
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Shape
+                    </h3>
+
+                    <p>
+
+                        We turn insight into a clear strategic
+                        idea and a visual or verbal system
+                        people can recognise.
+
+                    </p>
+
+                </article>
+
+
+
+                <article class="system-card reveal">
+
+                    <div class="system-card-top">
+
+                        <span>
+                            03
+                        </span>
+
+                        <span>
+                            ACTIVATE
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Launch
+                    </h3>
+
+                    <p>
+
+                        We put the work into the right channels,
+                        formats and moments to create movement.
+
+                    </p>
+
+                </article>
+
+
+
+                <article class="system-card reveal">
+
+                    <div class="system-card-top">
+
+                        <span>
+                            04
+                        </span>
+
+                        <span>
+                            LEARN
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Improve
+                    </h3>
+
+                    <p>
+
+                        We examine signals, learn from performance
+                        and refine what comes next.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+
+            <div class="system-bottom reveal">
+
+                <span>
+                    ONE CONNECTED VIEW
+                </span>
+
+                <span>
+                    STRATEGY → CREATIVE → DISTRIBUTION → LEARNING
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SELECTED WORK
+        ================================================== -->
+
+        <section
+            class="section-light work-section"
+            id="work"
+        >
+
+
+            <div class="section-heading reveal">
+
+                <div class="section-tag">
+                    06 — SELECTED WORK
+                </div>
+
+
+                <h2>
+                    IDEAS THAT
+                    <br>
+                    <span>
+                        GET NOTICED.
+                    </span>
+                </h2>
+
+
+                <p class="heading-note">
+
+                    A selection of graphic and campaign work.
+                    Verified performance numbers will be added
+                    only when available.
+
+                </p>
+
+            </div>
+
+
+            <div class="work-grid">
+
+
+                <!-- PROJECT 01 -->
+
+                <article class="work-card work-feature reveal">
+
+                    <a
+                        href="images/design4.jpg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-image"
+                        onclick="event.stopPropagation();"
+                    >
+
+                        <img
+                            src="images/design4.jpg"
+                            alt="Athletic Motivation poster design"
+                            loading="lazy"
+                        >
+
+                        <div class="project-overlay">
+
+                            <span>
+                                01 — SPORTS / POSTER
+                            </span>
+
+                            <strong>
+                                OPEN PROJECT ↗
+                            </strong>
+
+                        </div>
+
+                    </a>
+
+
+                    <div class="work-meta">
+
+                        <h3>
+                            Athletic Motivation
+                        </h3>
+
+                        <span>
+                            Poster Design
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PROJECT 02 -->
+
+                <article class="work-card reveal">
+
+                    <a
+                        href="images/design6.jpg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-image"
+                        onclick="event.stopPropagation();"
+                    >
+
+                        <img
+                            src="images/design6.jpg"
+                            alt="Aikenswrld Brand Promotion"
+                            loading="lazy"
+                        >
+
+                        <div class="project-overlay">
+
+                            <span>
+                                02 — BRAND / CAMPAIGN
+                            </span>
+
+                            <strong>
+                                OPEN PROJECT ↗
+                            </strong>
+
+                        </div>
+
+                    </a>
+
+
+                    <div class="work-meta">
+
+                        <h3>
+                            Aikenswrld Brand Promotion
+                        </h3>
+
+                        <span>
+                            Campaign Visual
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PROJECT 03 -->
+
+                <article class="work-card reveal">
+
+                    <a
+                        href="images/design1.jpg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-image"
+                        onclick="event.stopPropagation();"
+                    >
+
+                        <img
+                            src="images/design1.jpg"
+                            alt="Basketball Motivation social media design"
+                            loading="lazy"
+                        >
+
+                        <div class="project-overlay">
+
+                            <span>
+                                03 — SOCIAL / SPORTS
+                            </span>
+
+                            <strong>
+                                OPEN PROJECT ↗
+                            </strong>
+
+                        </div>
+
+                    </a>
+
+
+                    <div class="work-meta">
+
+                        <h3>
+                            Basketball Motivation
+                        </h3>
+
+                        <span>
+                            Social Media Design
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PROJECT 04 -->
+
+                <article class="work-card reveal">
+
+                    <a
+                        href="images/design2.jpg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-image"
+                        onclick="event.stopPropagation();"
+                    >
+
+                        <img
+                            src="images/design2.jpg"
+                            alt="Travel and Work Abroad campaign design"
+                            loading="lazy"
+                        >
+
+                        <div class="project-overlay">
+
+                            <span>
+                                04 — CAMPAIGN
+                            </span>
+
+                            <strong>
+                                OPEN PROJECT ↗
+                            </strong>
+
+                        </div>
+
+                    </a>
+
+
+                    <div class="work-meta">
+
+                        <h3>
+                            Travel & Work Abroad
+                        </h3>
+
+                        <span>
+                            Campaign Design
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PROJECT 05 -->
+
+                <article class="work-card reveal">
+
+                    <a
+                        href="images/design5.jpg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-image"
+                        onclick="event.stopPropagation();"
+                    >
+
+                        <img
+                            src="images/design5.jpg"
+                            alt="Pesalink Network infographic design"
+                            loading="lazy"
+                        >
+
+                        <div class="project-overlay">
+
+                            <span>
+                                05 — FINANCE / INFOGRAPHIC
+                            </span>
+
+                            <strong>
+                                OPEN PROJECT ↗
+                            </strong>
+
+                        </div>
+
+                    </a>
+
+
+                    <div class="work-meta">
+
+                        <h3>
+                            Pesalink Network
+                        </h3>
+
+                        <span>
+                            Infographic Design
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PROJECT 06 -->
+
+                <article class="work-card reveal">
+
+                    <a
+                        href="images/design3.jpg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-image"
+                        onclick="event.stopPropagation();"
+                    >
+
+                        <img
+                            src="images/design3.jpg"
+                            alt="Pesalink Partner Network corporate design"
+                            loading="lazy"
+                        >
+
+                        <div class="project-overlay">
+
+                            <span>
+                                06 — CORPORATE / INFOGRAPHIC
+                            </span>
+
+                            <strong>
+                                OPEN PROJECT ↗
+                            </strong>
+
+                        </div>
+
+                    </a>
+
+
+                    <div class="work-meta">
+
+                        <h3>
+                            Pesalink Partner Network
+                        </h3>
+
+                        <span>
+                            Corporate Design
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PEOPLE
+        ================================================== -->
+
+        <section class="people-section dark-section">
+
+
+            <div class="section-intro reveal">
+
+                <div class="section-index">
+                    05 — PEOPLE
+                </div>
+
+
+                <div>
+
+                    <p class="section-kicker">
+                        THE PEOPLE BEHIND THE WORK
+                    </p>
+
+
+                    <h2>
+
+                        BUILT BY
+                        <br>
+
+                        <span>
+                            PEOPLE.
+                        </span>
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="people-grid">
+
+
+                <!-- PEOPLE PHOTO -->
+
+                <article class="people-card reveal">
+
+                    <div class="people-photo">
+
+                        <img
+                            src="images/people.jpg"
+                            alt="Black African creative team collaborating in a modern studio"
+                            loading="lazy"
+                        >
+
+
+                        <div class="people-photo-overlay">
+
+                            <span>
+                                01
+                            </span>
+
+                            <strong>
+                                PEOPLE
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="people-meta">
+
+                        <span>
+                            01
+                        </span>
+
+                        <span>
+                            COLLABORATION
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- CREATIVE PHOTO -->
+
+                <article class="people-card reveal">
+
+                    <div class="people-photo">
+
+                        <img
+                            src="images/creative.jpg"
+                            alt="Black African graphic designer working in a creative studio"
+                            loading="lazy"
+                        >
+
+
+                        <div class="people-photo-overlay">
+
+                            <span>
+                                02
+                            </span>
+
+                            <strong>
+                                CREATIVE
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="people-meta">
+
+                        <span>
+                            02
+                        </span>
+
+                        <span>
+                            CRAFT
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- DIGITAL PHOTO -->
+
+                <article class="people-card reveal">
+
+                    <div class="people-photo">
+
+                        <img
+                            src="images/digital.jpg"
+                            alt="Black African digital marketing strategist in a modern agency"
+                            loading="lazy"
+                        >
+
+
+                        <div class="people-photo-overlay">
+
+                            <span>
+                                03
+                            </span>
+
+                            <strong>
+                                DIGITAL
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="people-meta">
+
+                        <span>
+                            03
+                        </span>
+
+                        <span>
+                            PERFORMANCE
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             INDUSTRIES
+        ================================================== -->
+
+        <section class="industries-section light-section">
+
+
+            <div class="section-intro reveal">
+
+                <div class="section-index">
+                    06 — EXPERIENCE
+                </div>
+
+
+                <div>
+
+                    <p class="section-kicker">
+                        WHERE WE CREATE
+                    </p>
+
+                    <h2>
+
+                        BRANDS WITH
+                        <br>
+
+                        <span>
+                            AMBITION.
+                        </span>
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="industry-list">
+
+
+                <div class="industry-item reveal">
+
+                    <span>01</span>
+
+                    <strong>
+                        Technology
+                    </strong>
+
+                    <i>↗</i>
+
+                </div>
+
+
+                <div class="industry-item reveal">
+
+                    <span>02</span>
+
+                    <strong>
+                        Finance
+                    </strong>
+
+                    <i>↗</i>
+
+                </div>
+
+
+                <div class="industry-item reveal">
+
+                    <span>03</span>
+
+                    <strong>
+                        Hospitality
+                    </strong>
+
+                    <i>↗</i>
+
+                </div>
+
+
+                <div class="industry-item reveal">
+
+                    <span>04</span>
+
+                    <strong>
+                        Education
+                    </strong>
+
+                    <i>↗</i>
+
+                </div>
+
+
+                <div class="industry-item reveal">
+
+                    <span>05</span>
+
+                    <strong>
+                        Professional Services
+                    </strong>
+
+                    <i>↗</i>
+
+                </div>
+
+
+                <div class="industry-item reveal">
+
+                    <span>06</span>
+
+                    <strong>
+                        Consumer Brands
+                    </strong>
+
+                    <i>↗</i>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             DIGITAL MARKETING EXPERIENCE
+        ================================================== -->
+
+        <section class="dashboard-section dark-section">
+
+
+            <div class="dashboard-layout">
+
+
+                <div class="dashboard-copy reveal">
+
+                    <div class="section-index">
+                        07 — DIGITAL ENGINE
+                    </div>
+
+
+                    <p class="section-kicker">
+                        THE WORK IS CONNECTED.
+                    </p>
+
+
+                    <h2>
+
+                        EVERY CHANNEL
+                        <br>
+
+                        <span>
+                            HAS A JOB.
+                        </span>
+
+                    </h2>
+
+
+                    <p class="dashboard-description">
+
+                        Your website should reinforce your brand.
+                        Your content should create a reason to care.
+                        Your campaigns should create movement.
+                        And your measurement should tell you what to
+                        do next.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="dashboard-ui reveal">
+
+
+                    <div class="dashboard-ui-header">
+
+                        <span>
+                            AIKENSWRLD / DIGITAL ENGINE
+                        </span>
+
+                        <span>
+                            CONNECTED
+                        </span>
+
+                    </div>
+
+
+                    <div class="dashboard-ui-body">
+
+
+                        <div class="dashboard-column">
+
+                            <span>
+                                BRAND
+                            </span>
+
+                            <strong>
+                                POSITION
+                            </strong>
+
+                            <div class="ui-line">
+                                <i style="width:78%;"></i>
+                            </div>
+
+                            <small>
+                                CLARITY
+                            </small>
+
+                        </div>
+
+
+                        <div class="dashboard-column">
+
+                            <span>
+                                CONTENT
+                            </span>
+
+                            <strong>
+                                CREATE
+                            </strong>
+
+                            <div class="ui-line">
+                                <i style="width:63%;"></i>
+                            </div>
+
+                            <small>
+                                CONSISTENCY
+                            </small>
+
+                        </div>
+
+
+                        <div class="dashboard-column">
+
+                            <span>
+                                MEDIA
+                            </span>
+
+                            <strong>
+                                ACTIVATE
+                            </strong>
+
+                            <div class="ui-line">
+                                <i style="width:86%;"></i>
+                            </div>
+
+                            <small>
+                                DISTRIBUTION
+                            </small>
+
+                        </div>
+
+
+                        <div class="dashboard-column">
+
+                            <span>
+                                DATA
+                            </span>
+
+                            <strong>
+                                LEARN
+                            </strong>
+
+                            <div class="ui-line">
+                                <i style="width:71%;"></i>
+                            </div>
+
+                            <small>
+                                INSIGHT
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="dashboard-ui-footer">
+
+                        <span>
+                            STRATEGY
+                        </span>
+
+                        <span>→</span>
+
+                        <span>
+                            CREATIVE
+                        </span>
+
+                        <span>→</span>
+
+                        <span>
+                            DISTRIBUTION
+                        </span>
+
+                        <span>→</span>
+
+                        <span>
+                            LEARNING
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ABOUT
+        ================================================== -->
+
+        <section
+            class="about-section blue-section"
+            id="about"
+        >
+
+
+            <div class="about-layout">
+
+
+                <div class="about-title reveal">
+
+                    <div class="section-index">
+                        08 — ABOUT
+                    </div>
+
+
+                    <h2>
+
+                        CREATIVITY
+                        <br>
+
+                        WITHOUT
+                        <br>
+
+                        <span>
+                            LIMITS.
+                        </span>
+
+                    </h2>
+
+                </div>
+
+
+
+                <div class="about-copy reveal">
+
+                    <p class="about-lead">
+
+                        Aikenswrld is a creative digital marketing
+                        brand led by Adrian Ndola.
+
+                    </p>
+
+
+                    <p>
+
+                        We combine design, digital thinking,
+                        marketing strategy and web experiences to
+                        help businesses communicate with more clarity
+                        and show up with more confidence.
+
+                    </p>
+
+
+                    <p>
+
+                        The aim is not to produce more noise.
+
+                        The aim is to make the right things impossible
+                        to ignore.
+
+                    </p>
+
+
+                    <a
+                        href="#contact"
+                        class="button-dark button-inline"
+                    >
+                        Work with Aikenswrld
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             INSIGHTS
+        ================================================== -->
+
+        <section
+            class="insights-section light-section"
+            id="insights"
+        >
+
+
+            <div class="section-intro reveal">
+
+                <div class="section-index">
+                    09 — INSIGHTS
+                </div>
+
+
+                <div>
+
+                    <p class="section-kicker">
+                        IDEAS WORTH SHARING
+                    </p>
+
+                    <h2>
+
+                        THINK
+                        <br>
+
+                        <span>
+                            DIFFERENTLY.
+                        </span>
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="insight-grid">
+
+
+                <article class="insight-card reveal">
+
+                    <div class="insight-top">
+
+                        <span>
+                            01 / STRATEGY
+                        </span>
+
+                        <span>
+                            04 MIN
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+
+                        Why attention is
+                        not the same thing
+                        as growth.
+
+                    </h3>
+
+
+                    <a href="#contact">
+                        Read perspective ↗
+                    </a>
+
+                </article>
+
+
+
+                <article class="insight-card reveal">
+
+                    <div class="insight-top">
+
+                        <span>
+                            02 / CREATIVE
+                        </span>
+
+                        <span>
+                            05 MIN
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+
+                        Building visual
+                        systems that make
+                        brands memorable.
+
+                    </h3>
+
+
+                    <a href="#contact">
+                        Read perspective ↗
+                    </a>
+
+                </article>
+
+
+
+                <article class="insight-card reveal">
+
+                    <div class="insight-top">
+
+                        <span>
+                            03 / DIGITAL
+                        </span>
+
+                        <span>
+                            06 MIN
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+
+                        What happens when
+                        every digital touchpoint
+                        does its job.
+
+                    </h3>
+
+
+                    <a href="#contact">
+                        Read perspective ↗
+                    </a>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FAQ
+        ================================================== -->
+
+        <section class="faq-section dark-section">
+
+
+            <div class="section-intro reveal">
+
+                <div class="section-index">
+                    10 — FAQ
+                </div>
+
+
+                <div>
+
+                    <p class="section-kicker">
+                        BEFORE WE START
+                    </p>
+
+                    <h2>
+
+                        QUESTIONS?
+                        <br>
+
+                        <span>
+                            LET'S ANSWER THEM.
+                        </span>
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-list">
+
+
+                <article class="faq-item reveal">
+
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+
+                        <span>
+                            What kind of projects do you take on?
+                        </span>
+
+                        <strong>
+                            +
+                        </strong>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+
+                            Branding, digital marketing,
+                            social content, campaign creative,
+                            websites and digital experiences.
+
+                            We can work on a focused project or
+                            help build a broader marketing system.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="faq-item reveal">
+
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+
+                        <span>
+                            Can you work with an existing brand?
+                        </span>
+
+                        <strong>
+                            +
+                        </strong>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+
+                            Yes. We can work from an existing identity
+                            and strengthen its strategy, content,
+                            digital presence or campaign execution.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="faq-item reveal">
+
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+
+                        <span>
+                            Do you only work with companies in Kenya?
+                        </span>
+
+                        <strong>
+                            +
+                        </strong>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+
+                            Aikenswrld is based in Kenya and can work
+                            with businesses and teams beyond the local
+                            market through remote collaboration.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="faq-item reveal">
+
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+
+                        <span>
+                            How do we start?
+                        </span>
+
+                        <strong>
+                            +
+                        </strong>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+
+                            Tell us about the business, the challenge,
+                            what you are trying to achieve and the
+                            timeline.
+
+                            We will use that to shape the conversation
+                            around the project.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CONTACT
+        ================================================== -->
+
+        <section
+            class="contact-section light-section"
+            id="contact"
+        >
+
+
+            <div class="contact-layout">
+
+
+                <div class="contact-title reveal">
+
+
+                    <div class="section-index">
+                        11 — START SOMETHING
+                    </div>
+
+
+                    <p class="section-kicker">
+                        LET'S TALK
+                    </p>
+
+
+                    <h2>
+
+                        READY TO
+                        <br>
+
+                        <span>
+                            MOVE?
+                        </span>
+
+                    </h2>
+
+
+                    <p>
+
+                        Tell us what you are building,
+                        changing or launching.
+
+                    </p>
+
+                </div>
+
+
+
+                <form
+                    class="contact-form reveal"
+                    id="projectForm"
+                >
+
+
+                    <label>
+
+                        NAME
+
+                        <input
+                            type="text"
+                            id="name"
+                            required
+                        >
+
+                    </label>
+
+
+                    <label>
+
+                        COMPANY / BRAND
+
+                        <input
+                            type="text"
+                            id="company"
+                        >
+
+                    </label>
+
+
+                    <label>
+
+                        EMAIL
+
+                        <input
+                            type="email"
+                            id="email"
+                            required
+                        >
+
+                    </label>
+
+
+                    <label>
+
+                        PROJECT TYPE
+
+                        <select id="projectType">
+
+                            <option>
+                                Digital Marketing
+                            </option>
+
+                            <option>
+                                Branding & Identity
+                            </option>
+
+                            <option>
+                                Social Media Creative
+                            </option>
+
+                            <option>
+                                Website / Digital Experience
+                            </option>
+
+                            <option>
+                                Campaign Creative
+                            </option>
+
+                            <option>
+                                Other
+                            </option>
+
+                        </select>
+
+                    </label>
+
+
+                    <label>
+
+                        TELL US ABOUT THE PROJECT
+
+                        <textarea
+                            id="message"
+                            rows="5"
+                            required
+                        ></textarea>
+
+                    </label>
+
+
+                    <button
+                        type="submit"
+                        class="button-primary form-submit"
+                    >
+
+                        Send project brief
+
+                        <span>
+                            ↗
+                        </span>
+
+                    </button>
+
+
+                    <p
+                        id="formNote"
+                        class="form-note"
+                    >
+                        Your email app will open with the project brief.
+                    </p>
+
+                </form>
+
+            </div>
+
+
+            <div class="contact-links reveal">
+
+
+                <a
+                    href="mailto:thecreativeaiken@gmail.com"
+                    class="contact-link"
+                >
+
+                    <span>
+                        EMAIL
+                    </span>
+
+                    <strong>
+                        thecreativeaiken@gmail.com
+                    </strong>
+
+                    <i>
+                        ↗
+                    </i>
+
+                </a>
+
+
+
+                <a
+                    href="https://wa.me/254794624359"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-link"
+                >
+
+                    <span>
+                        WHATSAPP
+                    </span>
+
+                    <strong>
+                        +254 794 624 359
+                    </strong>
+
+                    <i>
+                        ↗
+                    </i>
+
+                </a>
+
+
+
+                <a
+                    href="https://instagram.com/aiken_adrian4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-link"
+                >
+
+                    <span>
+                        INSTAGRAM
+                    </span>
+
+                    <strong>
+                        @aiken_adrian4
+                    </strong>
+
+                    <i>
+                        ↗
+                    </i>
+
+                </a>
+
+
+
+                <a
+                    href="https://www.linkedin.com/in/ndola-adrian-awour-3a61433a2/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-link"
+                >
+
+                    <span>
+                        LINKEDIN
+                    </span>
+
+                    <strong>
+                        Adrian Ndola
+                    </strong>
+
+                    <i>
+                        ↗
+                    </i>
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+
+        <div class="footer-main">
+
+
+            <div class="footer-brand">
+
+                <a href="#home">
+                    AIKEN'S WRLD
+                </a>
+
+                <p>
+                    CREATIVITY WITHOUT LIMITS.
+                </p>
+
+            </div>
+
+
+            <div class="footer-statement">
+
+                <p>
+                    Digital marketing for brands
+                    ready to move.
+                </p>
+
+            </div>
+
+
+            <div class="footer-nav">
+
+                <a href="#services">
+                    Services
+                </a>
+
+                <a href="#work">
+                    Work
+                </a>
+
+                <a href="#system">
+                    Approach
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © <span id="year"></span> Aikenswrld
+            </span>
+
+            <span>
+                Nairobi, Kenya
+            </span>
+
+            <span>
+                Designed & Built by Adrian Ndola
+            </span>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         PROJECT MODAL
+    ====================================================== -->
+
+    <div
+        class="project-modal"
+        id="projectModal"
+        aria-hidden="true"
+    >
+
+        <div class="project-modal-backdrop"></div>
+
+
+        <div class="project-modal-window">
+
+
+            <button
+                class="project-modal-close"
+                id="projectModalClose"
+                aria-label="Close project preview"
+            >
+                ×
+            </button>
+
+
+            <div class="modal-image-wrap">
+
+                <img
+                    id="modalImage"
+                    src=""
+                    alt="Project preview"
+                >
+
+            </div>
+
+
+            <div class="modal-info">
+
+                <span id="modalNumber">
+                    01
+                </span>
+
+
+                <div>
+
+                    <h3 id="modalTitle">
+                        Project title
+                    </h3>
+
+                    <p id="modalCategory">
+                        Project category
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
